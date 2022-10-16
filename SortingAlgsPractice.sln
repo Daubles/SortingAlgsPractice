@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgsPractice", "SortingAlgsPractice\SortingAlgsPractice.csproj", "{BA4ED927-5FA4-4102-96E9-A27551FDF262}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgsPractice.UnitTests", "SortingAlgsPractice.UnitTests\SortingAlgsPractice.UnitTests.csproj", "{BADE05B3-34E3-425F-AA50-B05D53D48DBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{BA4ED927-5FA4-4102-96E9-A27551FDF262}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4ED927-5FA4-4102-96E9-A27551FDF262}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4ED927-5FA4-4102-96E9-A27551FDF262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADE05B3-34E3-425F-AA50-B05D53D48DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADE05B3-34E3-425F-AA50-B05D53D48DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADE05B3-34E3-425F-AA50-B05D53D48DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADE05B3-34E3-425F-AA50-B05D53D48DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

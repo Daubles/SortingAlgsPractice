@@ -69,7 +69,8 @@ public class SortController
                     DisplayArray(numArray);
                     break;
                 case 2:
-                    SelectSort.RunSelectSort(numArray);
+                    var selectSort = new SelectSort();
+                    selectSort.RunSelectSort(numArray);
                     Console.WriteLine("Your array has been sorted below using select sort: ");
                     DisplayArray(numArray);
                     break;
