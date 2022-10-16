@@ -8,7 +8,7 @@ public class SelectSort
     }
 
     //Swap method that loops through array and swaps with smallest remaining number
-    public static int[] RunSelectSort(int[] numArray)
+    public void RunSelectSort(int[] numArray)
     {
         int i = 0;
         int n = numArray.Length - 1;
@@ -18,8 +18,6 @@ public class SelectSort
             Swap(numArray, i, j);
             i++;
         }
-
-        return numArray;
     }
 
     //Loops through array to find the smallest variable
