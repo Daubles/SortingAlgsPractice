@@ -10,7 +10,7 @@ public class SortingAlgsPracticeTests
         var bubbleSort = new BubbleSort();
         
         //Act
-        bubbleSort.RunBubbleSort(numArray);
+        bubbleSort.Sort(numArray);
         
         //Assert
         Assert.That(numArray[0], Is.EqualTo(1));
@@ -28,7 +28,7 @@ public class SortingAlgsPracticeTests
         var bubbleSort = new InsertSort();
         
         //Act
-        bubbleSort.RunInsertSort(numArray);
+        bubbleSort.Sort(numArray);
         
         //Assert
         Assert.That(numArray[0], Is.EqualTo(1));
@@ -46,7 +46,7 @@ public class SortingAlgsPracticeTests
         var mergeSort = new MergeSort();
         
         //Act
-        mergeSort.RunMergeSort(numArray);
+        mergeSort.Sort(numArray);
         
         //Assert
         Assert.That(numArray[0], Is.EqualTo(1));
@@ -64,7 +64,7 @@ public class SortingAlgsPracticeTests
         var selectSort = new SelectSort();
         
         //Act
-        selectSort.RunSelectSort(numArray);
+        selectSort.Sort(numArray);
         
         //Assert
         Assert.That(numArray[0], Is.EqualTo(1));

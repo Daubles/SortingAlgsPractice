@@ -1,8 +1,8 @@
 namespace SortingAlgsPractice;
 
-public class MergeSort
+public class MergeSort : ISorter
 {
-    public void RunMergeSort(int[] inputArray)
+    public void Sort(int[] inputArray)
     {
         int arrayLength = inputArray.Length;
         //Condition to break recursion once input array has been split into multiple arrays of 1
@@ -25,8 +25,8 @@ public class MergeSort
             rightHalf[i - midIndex] = inputArray[i];
         }
         
-        RunMergeSort(leftHalf);
-        RunMergeSort(rightHalf);
+        Sort(leftHalf);
+        Sort(rightHalf);
         
         Merge(inputArray, leftHalf, rightHalf);
     }
