@@ -63,26 +63,26 @@ public class SortController
             switch (menuSelection)
             {
                 case 1:
-                    var bubbleSort = new BubbleSort();
-                    bubbleSort.RunBubbleSort(numArray);
+                    ISorter bubbleSort = new BubbleSort();
+                    bubbleSort.Sort(numArray);
                     Console.WriteLine("Your array has been sorted below using bubble sort: ");
                     DisplayArray(numArray);
                     break;
                 case 2:
-                    var selectSort = new SelectSort();
-                    selectSort.RunSelectSort(numArray);
+                    ISorter selectSort = new SelectSort();
+                    selectSort.Sort(numArray);
                     Console.WriteLine("Your array has been sorted below using select sort: ");
                     DisplayArray(numArray);
                     break;
                 case 3:
-                    var insertSort = new InsertSort();
-                    insertSort.RunInsertSort(numArray);
+                    ISorter insertSort = new InsertSort();
+                    insertSort.Sort(numArray);
                     Console.WriteLine("Your array has been sorted below using an insert sort: ");
                     DisplayArray(numArray);
                     break;
                 case 4:
-                    var mergeSort = new MergeSort();
-                    mergeSort.RunMergeSort(numArray);
+                    ISorter mergeSort = new MergeSort();
+                    mergeSort.Sort(numArray);
                     Console.WriteLine("Your array has been sorted below using select sort: ");
                     DisplayArray(numArray);
                     break;

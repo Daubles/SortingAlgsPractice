@@ -1,6 +1,6 @@
 namespace SortingAlgsPractice;
 
-public class BubbleSort
+public class BubbleSort : ISorter
 {
     private void Swap(int[] numArray, int x, int y)
     {
@@ -8,7 +8,7 @@ public class BubbleSort
     }
 
     //Loops through array comparing to sequential numbers and swapping where condition is met
-    public void RunBubbleSort(int[] inputArray)
+    public void Sort(int[] inputArray)
     {
         for (int i = 0; i < inputArray.Length; i++)
         {

@@ -1,6 +1,6 @@
 namespace SortingAlgsPractice;
 
-public class SelectSort
+public class SelectSort : ISorter
 {
     private static void Swap(int[] numArray, int x, int y)
     {
@@ -8,14 +8,14 @@ public class SelectSort
     }
 
     //Swap method that loops through array and swaps with smallest remaining number
-    public void RunSelectSort(int[] numArray)
+    public void Sort(int[] inputArray)
     {
         int i = 0;
-        int n = numArray.Length - 1;
+        int n = inputArray.Length - 1;
         while (i < n)
         {
-            int j = LocationOfSmallest(numArray, i, n);
-            Swap(numArray, i, j);
+            int j = LocationOfSmallest(inputArray, i, n);
+            Swap(inputArray, i, j);
             i++;
         }
     }
