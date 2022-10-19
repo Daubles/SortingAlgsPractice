@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using Microsoft.Extensions.Logging;
+using SortingAlgsPractice.Sorters;
 
 namespace SortingAlgsPractice;
 
@@ -12,13 +14,17 @@ public class SortController
     }
     public void Start()
     {
-        _logger.LogDebug("Starting sorting..");
+        _logger.LogDebug("Program started");
         int[] numArray = CreateArray();
         Console.WriteLine("Here is your unsorted array:");
         DisplayArray(numArray);
         DisplayMenu();
         int menuSelection = Convert.ToInt16(Console.ReadLine());
+        Stopwatch timer = new Stopwatch();
+        timer.Start();                  
         RunMenu(menuSelection, numArray);
+        timer.Stop();
+        _logger.LogDebug("This array was sorted in: {0:mm\\:ss\\.fff}", timer.Elapsed);
     }
     
     
@@ -29,7 +35,7 @@ public class SortController
             const int max = 100;
 
             Console.WriteLine("Enter a number N:");
-            int n = Convert.ToInt16(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
             int[] numArray = new int[n];
             Random randNum = new Random();
 
@@ -87,7 +93,7 @@ public class SortController
                     DisplayArray(numArray);
                     break;
                 default:
-                    Console.WriteLine("Please select a valid input");
+                    Console.WriteLine("Please select a valid input.");
                     break;
             }
             
