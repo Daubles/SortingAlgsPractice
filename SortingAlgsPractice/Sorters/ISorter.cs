@@ -1,4 +1,4 @@
-namespace SortingAlgsPractice;
+namespace SortingAlgsPractice.Sorters;
 
 public interface ISorter
 {

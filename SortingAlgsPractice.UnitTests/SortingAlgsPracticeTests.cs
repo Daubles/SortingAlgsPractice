@@ -1,3 +1,5 @@
+using SortingAlgsPractice.Sorters;
+
 namespace SortingAlgsPractice.UnitTests;
 
 public class SortingAlgsPracticeTests
